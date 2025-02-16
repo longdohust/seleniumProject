@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" thread-count="2" parallel="tests">
+    <listeners>
+        <listener class-name="TestComponents.Listeners"/>
+    </listeners>
+    <test preserve-order="true" name="ErrorValidation">
+        <classes>
+            <class name="ErrorValidation"> </class>
+        </classes>
+    </test>
+    <test preserve-order="true" name="Order">
+        <classes>
+            <class name="StandAloneTest"> </class>
+        </classes>
+    </test>
+</suite>
