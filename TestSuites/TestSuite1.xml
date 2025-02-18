@@ -4,14 +4,14 @@
     <listeners>
         <listener class-name="TestComponents.Listeners"/>
     </listeners>
-    <test preserve-order="true" name="ErrorValidation">
+    <test preserve-order="true" name="ErrorValidationTest">
         <classes>
-            <class name="ErrorValidation"> </class>
+            <class name="ErrorValidationTest"> </class>
         </classes>
     </test>
     <test preserve-order="true" name="Order">
         <classes>
-            <class name="StandAloneTest"> </class>
+            <class name="TakeOrderTest"> </class>
         </classes>
     </test>
 </suite>

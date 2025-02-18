@@ -3,7 +3,7 @@
     Background:
       Given I landed on Ecommerce page
 
-      @tag2
+      @Valid
       Scenario Outline: Positive test for submitting order
         Given Logged in with the username <name> and password <password>
         When Adding product <productName> to Cart

@@ -1,26 +1,18 @@
 import TestComponents.BaseTest;
 import TestComponents.RetryTestFail;
-import com.fasterxml.jackson.databind.ser.Serializers;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import pageobjecs.*;
+import PageObjects.*;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class StandAloneTest extends  BaseTest{
+public class TakeOrderTest extends  BaseTest{
     @Test (groups = "Valid", dataProvider = "getData3", retryAnalyzer = RetryTestFail.class)
     public void test1(HashMap<String,String> input) throws IOException {
         //Login

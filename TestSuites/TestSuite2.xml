@@ -4,9 +4,9 @@
     <listeners>
         <listener class-name="TestComponents.Listeners"/>
     </listeners>
-    <test preserve-order="true" name="ErrorValidation">
+    <test preserve-order="true" name="ErrorValidationTest">
         <classes>
-            <class name="ErrorValidation"/>
+            <class name="ErrorValidationTest"/>
         </classes>
     </test>
 </suite>

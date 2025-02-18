@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import resources.ExtentReporter;
+import Resources.ExtentReporter;
 
 import java.io.IOException;
 

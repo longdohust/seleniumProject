@@ -1,16 +1,10 @@
 import TestComponents.BaseTest;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageobjecs.CartPage;
-import pageobjecs.CheckOutPage;
-import pageobjecs.ConfirmationPage;
-import pageobjecs.ProductsPage;
 
 import java.io.IOException;
-import java.util.List;
 
-public class ErrorValidation extends  BaseTest{
+public class ErrorValidationTest extends  BaseTest{
     @Test (groups = "Invalid")
     public void test1() throws IOException {
 

@@ -1,4 +1,4 @@
-package TestDefinitions;
+package StepDefinitions;
 
 import TestComponents.BaseTest;
 import io.cucumber.java.en.And;
@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-import pageobjecs.*;
+import PageObjects.*;
 
 import java.io.IOException;
 
@@ -46,5 +46,12 @@ public class Steps extends BaseTest {
     @Then("{string} message is displayed")
     public void messageShowAndConfirm(String message){
         Assert.assertEquals(confirmationPage.getConfirmationMessage(),message);
+        driver.close();
+    }
+
+    @Then("{string} error message is displayed")
+    public void errorMessageShowAnfConfirm(String message){
+        Assert.assertEquals(landingPage.getErrorMessage(), message);
+        driver.close();
     }
 }
