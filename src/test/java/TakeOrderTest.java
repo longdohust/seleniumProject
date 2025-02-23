@@ -66,6 +66,7 @@ public class TakeOrderTest extends  BaseTest{
     public Object[][] getData3() throws IOException {
         List<HashMap<String,String>> data = getDataToHashmap(
                 System.getProperty("user.dir")+"\\src\\test\\java\\Data\\order.json");
+
         int size = data.size();
         Object[][] returnData = new Object[size][1];
         for (int i = 0; i < size; i++){
