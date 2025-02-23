@@ -1,6 +1,7 @@
 import TestComponents.BaseTest;
 import TestComponents.RetryTestFail;
 
+import com.sun.source.tree.WhileLoopTree;
 import org.openqa.selenium.WebElement;
 
 import org.testng.Assert;
@@ -65,7 +66,13 @@ public class TakeOrderTest extends  BaseTest{
     public Object[][] getData3() throws IOException {
         List<HashMap<String,String>> data = getDataToHashmap(
                 System.getProperty("user.dir")+"\\src\\test\\java\\Data\\order.json");
-        return new Object[][] {{data.get(0)}, {data.get(1)}};
+
+        int size = data.size();
+        Object[][] returnData = new Object[size][1];
+        for (int i = 0; i < size; i++){
+            returnData[i][0] = data.get(i);
+        }
+        return returnData;
     }
 
 }
